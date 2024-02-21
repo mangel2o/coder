@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- secciones semanticas, alternativas a los divs -->
+		<header>Header</header>
+		<main>Contenido</main>
+		<footer>Footer</footer>
+
+		<!-- 
+         <div>
+             <h1>32 Cuentas de Twitter Absurdas</h1>
+         </div>
+       -->
+
+		<!-- imagen => elemento -->
+		<!-- Img -> etiqueta -->
+		<!-- src => attributo -->
+		<!-- <img src="a03-texto.html" /> -->
+
+		<!-- division => elemento -->
+		<!-- div => etiqueta -->
+		<!-- class => atributo -->
+		<!-- esto es un contenido => contenido -->
+		<div class="algo">Esto es un contenido</div>
+
+		<!-- Formas -->
+		<form>
+			<input type="text" />
+			<input type="submit" value="Entregar forma" />
+		</form>
+
+		<hr />
+
+		<!-- forma con labels vecinos -->
+		<form>
+			<!-- id => identificador para algún elemento, debe de ser unico -->
+			<!-- for => busca en la pagina HTML por el identificador para combinarse -->
+			<label for="nombre">Nombre:</label><br />
+			<input type="text" id="nombre" />
+			<br />
+			<label for="apellido">Apellido:</label><br />
+			<input type="text" id="apellido" />
+			<br />
+			<label for="correo">Correo:</label><br />
+			<input type="text" id="correo" />
+		</form>
+
+		<hr />
+
+		<!-- forma con labels anidadas -->
+		<form>
+			<label>
+				<span>Nombre:</span><br />
+				<input type="text" id="nombre2" />
+			</label>
+			<br />
+			<label>
+				<span>Apellido:</span><br />
+				<input type="text" id="apellido2" />
+			</label>
+			<br />
+			<label>
+				<span>Correo:</span><br />
+				<input type="text" id="correo2" />
+			</label>
+		</form>
+
+		<hr />
+
+		<!-- type => radio -> solo se puede seleccionar una opción -->
+		<!-- name => define un grupo en comun para los botones de radio -->
+		<!-- value => es el valor del radio -->
+		<!-- id => identificador para cada radio  -->
+		<!-- label => sirve para extender la funcionalidad del campo, en este caso, permite cambiar el radio picandole al texto -->
+		<form>
+			<h1>Bebidas</h1>
+			<input type="radio" name="bebidas" value="coca-cola" id="coca" />
+			<label for="coca">Coca cola</label>
+
+			<input type="radio" name="bebidas" value="pepsi" id="pepsi" />
+			<label for="pepsi">Pepsi</label>
+
+			<input type="radio" name="bebidas" value="dr-pepper" id="dr-pepper" />
+			<label for="dr-pepper">Dr. Pepper</label>
+		</form>
+
+		<hr />
+
+		<!-- checkbox => puedes seleccionar varios valores -->
+		<form>
+			<h1>Orden:</h1>
+			<input type="checkbox" value="hamburguesa" id="hamburguesa" />
+			<label for="hamburguesa">Hamburguesa</label>
+
+			<input type="checkbox" value="papas" id="papas" />
+			<label for="papas">Papas</label>
+
+			<input type="checkbox" value="bebida" id="bebida" />
+			<label for="bebida">Bebida 1</label>
+
+			<input type="checkbox" value="bebida2" id="bebida2" />
+			<label for="bebida2">Bebida 2</label>
+		</form>
+
+		<hr />
+
+		<!-- select => define una lista dropdown para seleccionar multiples opciones -->
+		<!-- option => opción que vive dentro de un select, solo se puede seleccionar uno a la vez -->
+		<!-- attribute multiple => puedes seleccionar multiple opciones usando ctrl + click -->
+		<!-- attribute size => puede mostrar todas las opciones en una lista -->
+		<form>
+			<h1>Bebida favorita:</h1>
+			<select id="bebidas3" multiple>
+				<option value="coca-cola">Coca cola</option>
+				<option value="pepsi">Pepsi</option>
+				<option value="mountain-dew" selected>Mountain Dew</option>
+			</select>
+		</form>
+
+		<hr />
+
+		<!-- textarea => sirve para ingresar grandes cantidades de texto -->
+		<form>
+			<h1>Ingresa algún texto</h1>
+			<textarea rows="8"></textarea>
+		</form>
+
+		<hr />
+
+		<!-- input type = "submit" => entrega la forma -->
+		<!-- button type = "submit" => también entrega la forma -->
+		<!-- button type = "button" => no entrega la forma, actua como un botón normal -->
+		<form>
+			<h1>Ingresa tu nombre</h1>
+			<label for="nombre3">Nombre: </label><br />
+			<input type="text" id="nombre3" />
+			<br />
+			<input type="submit" value="Enviar" />
+			<button type="submit">Enviar</button>
+		</form>
+	</body>
+</html>
